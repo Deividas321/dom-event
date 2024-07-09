@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#score1, #score2 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#last-click {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #555;
+}
+.team1{
+    background-color: red;
+}
+.team2{
+    background-color: green;
+}
