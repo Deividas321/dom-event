@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM events</title>
+    <title>Scoreboard</title>
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <h1>Scoreboard</h1>
-
-    <table>
-        <tr>
-            <th class="team1">Team 1</th>
-            <th class="team2">Team 2</th>
-        </tr>
-        <tr>
-            <td>
-                <div id="score1">Score: 0</div>
-                <button data-team="1" data-points="1">Add 1 Point</button>
-                <button data-team="1" data-points="2">Add 2 Points</button>
-                <button data-team="1" data-points="3">Add 3 Points</button>
-            </td>
-            <td>
-                <div id="score2">Score: 0</div>
-                <button data-team="2" data-points="1">Add 1 Point</button>
-                <button data-team="2" data-points="2">Add 2 Points</button>
-                <button data-team="2" data-points="3">Add 3 Points</button>
-            </td>
-        </tr>
-    </table>
-
-    <div id="last-click">Last Click: None</div>
-    
+    <div id="scoreboard">
+        <div id="score1" class="score">Score: 0</div>
+        <div id="timer">90:00</div>
+        <div id="score2" class="score">Score: 0</div>
+    </div>
+    <div id="controls">
+        <button id="start-pause">Start</button>
+    </div>
+    <div id="last-click">Last Scored: None</div>
+    <div id="greeting"></div>
+    <div id="buttons">
+        <div>
+            <h3>Mano kaimas</h3>
+            <button data-team="1" data-points="1">+1</button>
+            <button data-team="1" data-points="2">+2</button>
+            <button data-team="1" data-points="3">+3</button>
+            <button data-team="1" data-action="delete">Delete</button>
+        </div>
+        <div>
+            <h3>Priesu kaimas</h3>
+            <button data-team="2" data-points="1">+1</button>
+            <button data-team="2" data-points="2">+2</button>
+            <button data-team="2" data-points="3">+3</button>
+            <button data-team="2" data-action="delete">Delete</button>
+        </div>
+    </div>
+    <div id="log"></div>
         <script src="./js/home.js"></script>
     </body>
     </html>

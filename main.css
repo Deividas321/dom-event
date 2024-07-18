@@ -1,45 +1,61 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 20px;
 }
 
-h1 {
-    color: #333;
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
 }
 
-table {
-    width: 50%;
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
-#score1, #score2 {
+.score {
     font-size: 2em;
-    margin: 10px 0;
+    width: 150px;
+    height: 100px;
+    line-height: 100px;
+    background-color: lightgray;
+    border-radius: 10px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 5px;
-}
-
-#last-click {
-    margin-top: 20px;
-    font-size: 1.5em;
-    color: #555;
-}
-.team1{
+#score1 {
     background-color: red;
+    color: black;
+    padding: 50px;
 }
-.team2{
+
+#score2 {
     background-color: green;
+    color: black;
+    padding: 50px;
+}
+
+#timer {
+    font-size: 2.5em;
+    margin: 0 20px;
+}
+
+#controls {
+    margin: 20px 0;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#buttons div {
+    margin: 10px;
+}
+
+#buttons button {
+    box-sizing: border-box;
+    margin: 5%;
+    
+}
+
+#log {
+    margin-top: 20px;
+    text-align: left;
 }
